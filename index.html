@@ -1,11 +1,22 @@
 <html>
 <title>Card Game</title>
-<body>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body class="container">
     <div>
-        <input type="text" placeholder="player 1" />
-        <input type="text" placeholder="player 2" />
-        <input type="button" onclick="StartGame('player1','player2')" />
+        <div class="row">
+            <input id="txtPlayer1" class="col-md-4 col-md-offset-4" type="text" placeholder="player 1" />
+        </div>
+        <div class="row">
+            <input id="txtPlayer2" class="col-md-4 col-md-offset-4" type="text" placeholder="player 2" />
+        </div>
+        <div class="row">    
+            <button type="button" class="col-md-4 col-md-offset-4 btn btn-primary" onclick="StartGame()">Start</button>
+        </div>
     </div>
 </body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script type="text/javascript" src="scripts/game.js" ></script>
 </html>

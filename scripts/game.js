@@ -1,5 +1,8 @@
 
-function StartGame(name1, name2) {
+function StartGame() {
+    var name1 = document.getElementById('txtPlayer1').value;
+    var name2 = document.getElementById('txtPlayer2').value;
+    
     var game = new Game(name1, name2);
     game.start();
 }
